@@ -1,24 +1,44 @@
-# README
+Authentication
+This project was used to get our feets wet working on authorization and authentication using Rails powerful DEVISEs. In this project, a user can create a post, only a logged in user can see the author of a post
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Built With
+Ruby on Rails
+Ruby
+Getting Started
+To get a local copy of the repository please run the following commands on your terminal:
 
-Things you may want to cover:
+$ cd folder-name
 
-* Ruby version
+git clone git@github.com:EroAuditore/secreet_keeper.git
+$ cd secreet_keeper
+$ bundle install 
+$ rails db:migrate
+$ yarn install --check-files
 
-* System dependencies
+Authors
 
-* Configuration
+👤 Eduardo Rodriguez
 
-* Database creation
+Github: @EroAuditore
+Linkedin: EroAuditore
 
-* Database initialization
+👤 Chukwuma Obasi
 
-* How to run the test suite
+GitHub: @ccobasi
+LinkedIn: chukwuma-obasi
 
-* Services (job queues, cache servers, search engines, etc.)
+🤝 Contributing
+Contributions, issues, and feature requests are welcome!
 
-* Deployment instructions
+Contributing
+Contributions, issues and feature requests are welcome! Start by:
 
-* ...
+Forking the project
+Cloning the project to your local machine
+cd into the project directory
+Run git checkout -b your-branch-name
+Make your contributions
+Push your branch up to your forked repository
+Open a Pull Request with a detailed description to the development branch of the original project for a review
+Show your support
+Give a ⭐️ if you like this project

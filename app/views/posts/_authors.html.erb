@@ -6,14 +6,14 @@
                     <article class="media">
                         <div class="media-left">
                         <figure class="image is-64x64">
-                            <img src="https://www.flaticon.com/svg/static/icons/svg/3532/3532597.svg" alt="https://www.flaticon.com/svg/static/icons/svg/3532/3532597.svg">
+                           <%= gravatar_image_tag(author.email, size: 64, alt: author.name) %>
                         </figure>
                         </div>
                         <div class="media-content">
                         <div class="content">
                         
                             <strong><%= author.name %> </strong><br>
-                            <small><a class="is_link" href="/posts/2">My nephew has problems</a></small>
+                            <small><a class="is_link" href="#"><%= author.posts.last.title %></a></small>
                         
                         </div>
                         </div>
