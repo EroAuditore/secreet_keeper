@@ -3,17 +3,18 @@
   <div class="container">
     <div class="columns">
       <div class="column is-one-quarter">
-      top 10
+        top 10
       </div>
       <div class="column is-half">
-        <%= render partial: 'posts/form' %>
+      <%= debug @post %>
+        <%= render partial: 'form' %>
+
+        <%= render partial: 'feed' %>
       </div>
       <div class="column is-one-quarter">
-      authors
+        authors
       </div>
     </div>
   </div>
 </section>
 
-
-<%= link_to 'New Post', new_post_path %>
