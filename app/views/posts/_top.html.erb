@@ -1,0 +1,11 @@
+ <nav class="panel is-primary">
+          <p class="panel-heading">Top Secreets</p>
+      
+      <% @posts.each do | post | %>
+            <p class="panel-block">
+                <a class="is-link" href="#"><%=post.title %></a>
+            </p>
+      <% end%>
+             
+          
+        </nav>

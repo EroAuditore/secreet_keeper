@@ -15,34 +15,44 @@
   
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-
-  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-                <h1 class="title is-5">Secreet Keeper</h1>
-            </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-          </a>
+<nav class="navbar  is-primary">
+      <div class="navbar-brand">
+        <%=link_to root_path, class: "navbar-item" do%>
+          <h1 class="title is-5 is-inverted">Secret keeper</h1>
+        <% end %>
+        <div class="navbar-burger burger" data-target="navbarExample">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="navbar-menu" id="navbarExample">
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <a class="button is-dark has-text-white is-fullwidth" href="/">New Topic</a>
+      </div>
+      <div id="navbarExample" class="navbar-menu">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                <%=link_to 'New Post', new_post_path, class: "button is-info is-inverted"%>
+              </p>
+                <% if user_signed_in? %>
+              <p class="control">
+                <%= link_to current_user.name, edit_user_registration_path, class: "button is-primary" %>
+              </p>
+              <p>
+                <%= link_to "Logout", destroy_user_session_path, method: :delete, class:"button is-primary" %>
+              </p>
+            <% else %>
+            <p class="control">
+              <%= link_to 'Sign In', new_user_session_path, class: "button is-primary" %>
+            </p>
+						<p class="control">
+              <%= link_to 'Sign Up', new_user_registration_path, class: "button is-primary" %>
+            </p>
+            <% end %>
             </div>
-  
-            <div class="navbar-item">
-              <a class="button is-primary has-text-dark is-fullwidth" href="/members/sign_up">New User</a>
-            </div>
-            <div class="navbar-item">
-              <a class="button is-primary has-text-dark is-fullwidth" href="/members/sign_in">Log In</a>
-            </div>
-  
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
       
     <%= yield %>
   </body>

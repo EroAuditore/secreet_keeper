@@ -3,16 +3,15 @@
   <div class="container">
     <div class="columns">
       <div class="column is-one-quarter">
-        top 10
+        <%= render 'top' %>
       </div>
       <div class="column is-half">
-      <%= debug @post %>
         <%= render partial: 'form' %>
 
         <%= render partial: 'feed' %>
       </div>
       <div class="column is-one-quarter">
-        authors
+        <%= render 'authors' %>
       </div>
     </div>
   </div>
