@@ -1,5 +1,7 @@
 <nav class="panel is-primary">
           <p class="panel-heading">Authors</p>
+
+          <% @authors.each do | author | %>
                 <div class="panel-block">
                     <article class="media">
                         <div class="media-left">
@@ -9,12 +11,13 @@
                         </div>
                         <div class="media-content">
                         <div class="content">
-                            <strong>Log in to see the author's name</strong><br>
+                            <strong><%= author.name %> </strong><br>
                             <small><a class="is_link" href="/posts/2">My nephew has problems</a></small>
                         </div>
                         </div>
                     </article>
                 </div>
+            <% end %>
               
       
         </nav>
