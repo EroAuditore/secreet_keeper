@@ -1,5 +1,8 @@
-Authentication
-This project was used to get our feets wet working on authorization and authentication using Rails powerful DEVISEs. In this project, a user can create a post, only a logged in user can see the author of a post
+Secreet Keeper
+
+![screenshot](screenshot.png)
+
+An exclusive clubhouse where your members can write anonymous posts. Where only the members can see who the author of the post is.
 
 Built With
 Ruby on Rails
