@@ -7,13 +7,11 @@
       </div>
       <div class="column is-half">
         <%= render partial: 'form' %>
-
-        <%= render partial: 'feed' %>
+        <%= user_is_signed_in(@post) %>
       </div>
       <div class="column is-one-quarter">
-      <% if user_signed_in? %>
-         <%= render partial: 'authors' %>
-      <% end %>
+      
+      <%= is_signed_in(@post) %>
       </div>
     </div>
   </div>
