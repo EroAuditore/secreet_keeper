@@ -1,0 +1,22 @@
+<nav class="panel is-primary">
+          <p class="panel-heading">Authors</p>
+
+          <% @authors.each do | author | %>
+                <div class="panel-block">
+                    <article class="media">
+                        <div class="media-left">
+                        <figure class="image is-64x64">
+                           <%= gravatar_image_tag(author.email, size: 64, alt: author.name) %>
+                        </figure>
+                        </div>
+                        <div class="media-content">
+                        <div class="content">
+                            <strong><%= author.name %> </strong><br>
+                        </div>
+                        </div>
+                    </article>
+                </div>
+            <% end %>
+              
+      
+</nav>
