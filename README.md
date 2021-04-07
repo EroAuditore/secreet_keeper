@@ -1,4 +1,4 @@
-Secreet Keeper
+## Secreet Keeper
 
 ![screenshot](screenshot.png)
 
@@ -7,18 +7,21 @@ An exclusive clubhouse where your members can write anonymous posts. Where only 
 Built With
 Ruby on Rails
 Ruby
-Getting Started
+
+## Getting Started
+
 To get a local copy of the repository please run the following commands on your terminal:
 
 $ cd folder-name
 
-git clone git@github.com:EroAuditore/secreet_keeper.git
-$ cd secreet_keeper
-$ bundle install 
-$ rails db:migrate
-$ yarn install --check-files
+> git clone git@github.com:EroAuditore/secreet_keeper.git
 
-Authors
+- $ cd secreet_keeper
+- $ bundle install
+- $ rails db:migrate
+- $ yarn install --check-files
+
+## Authors
 
 👤 Eduardo Rodriguez
 
